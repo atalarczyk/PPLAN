@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+dist/
+coverage/
+
+# Environment
+.env
+*.env.local
+
+# Editor and OS
+.vscode/
+.DS_Store
+
+# Local infrastructure data
+postgres-data/
+

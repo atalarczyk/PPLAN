@@ -1,0 +1,303 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.4;
+  color: #172b4d;
+  background: #f6f8fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f6f8fb;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  background: #0b3d91;
+  color: #fff;
+}
+
+.app-header nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.app-header a {
+  color: #dbe9ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.app-header a:hover {
+  color: #fff;
+}
+
+.app-nav-disabled {
+  color: #a8b9db;
+  cursor: not-allowed;
+  font-weight: 600;
+}
+
+.app-user {
+  color: #dbe9ff;
+  font-size: 0.9rem;
+}
+
+.app-content {
+  padding: 1rem 1.25rem;
+}
+
+.app-row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-end;
+  margin-bottom: 0.75rem;
+}
+
+.app-row-wrap {
+  flex-wrap: wrap;
+}
+
+.app-row-spaced {
+  justify-content: space-between;
+}
+
+.app-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.app-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.app-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.app-grid-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.app-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.app-field-full {
+  grid-column: 1 / -1;
+}
+
+.app-field input,
+.app-field select,
+.app-field textarea {
+  border: 1px solid #c9d6ee;
+  border-radius: 6px;
+  padding: 0.4rem 0.5rem;
+  font: inherit;
+  color: #172b4d;
+}
+
+.app-form {
+  border: 1px solid #dce3f0;
+  border-radius: 10px;
+  padding: 0.85rem;
+  background: #fdfefe;
+  margin-bottom: 1rem;
+}
+
+.app-form-inner {
+  margin-bottom: 0.75rem;
+}
+
+.app-state {
+  margin: 0.4rem 0 0.75rem;
+}
+
+.app-error {
+  color: #a12929;
+}
+
+.app-success {
+  color: #1e7b34;
+}
+
+.app-muted {
+  color: #5b6e90;
+}
+
+.app-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.app-table th,
+.app-table td {
+  border: 1px solid #dce3f0;
+  padding: 0.45rem 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.app-table th {
+  background: #f2f6ff;
+  font-weight: 700;
+}
+
+.app-table-scroll {
+  overflow-x: auto;
+}
+
+.app-link-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.7rem;
+}
+
+.app-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.app-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: center;
+  border: 1px solid #dce3f0;
+  border-radius: 6px;
+  padding: 0.45rem 0.5rem;
+  background: #fff;
+}
+
+.app-button-secondary {
+  background: #5a6f98;
+  border-color: #5a6f98;
+}
+
+.app-button-secondary:hover {
+  background: #4a5f87;
+}
+
+.app-button-danger {
+  background: #8c2331;
+  border-color: #8c2331;
+}
+
+.app-button-danger:hover {
+  background: #781d29;
+}
+
+.app-kpi-card {
+  border: 1px solid #dce3f0;
+  border-radius: 8px;
+  background: #fff;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.app-kpi-card span {
+  color: #5b6e90;
+  font-size: 0.82rem;
+}
+
+.app-kpi-card strong {
+  font-size: 1.05rem;
+}
+
+.app-fieldset {
+  border: 1px solid #dce3f0;
+  border-radius: 8px;
+  padding: 0.55rem;
+}
+
+.app-checkbox-list {
+  display: grid;
+  gap: 0.35rem;
+  max-height: 160px;
+  overflow: auto;
+}
+
+.matrix-row-stage td {
+  background: #edf3ff;
+}
+
+.matrix-row-task td {
+  background: #f7f9ff;
+}
+
+.matrix-stage-label,
+.matrix-task-label,
+.matrix-performer-label {
+  font-weight: 600;
+}
+
+.matrix-color-token {
+  margin-left: 0.55rem;
+  font-size: 0.75rem;
+  color: #395277;
+}
+
+.matrix-edit-pair {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.matrix-edit-pair input {
+  width: 6.2rem;
+}
+
+.matrix-readonly-value {
+  color: #324866;
+  font-variant-numeric: tabular-nums;
+}
+
+.route-guard-state {
+  background: #fff;
+  border: 1px solid #dce3f0;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+button {
+  border: 1px solid #0b3d91;
+  border-radius: 6px;
+  background: #0b3d91;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.45rem 0.75rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0a3379;
+}
+
+section {
+  background: #fff;
+  border: 1px solid #dce3f0;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
