@@ -25,7 +25,10 @@ class Settings(BaseSettings):
     cost_fte_month_working_days: int = Field(default=20, ge=1)
     # Keep .env support for comma-separated values (non-JSON).
     allowed_origins: Annotated[list[str], NoDecode] = Field(
-        default_factory=lambda: ["http://localhost:5173"]
+        default_factory=lambda: [
+            "http://localhost:5173",
+            "http://127.0.0.1:5173",
+        ]
     )
 
     model_config = SettingsConfigDict(
